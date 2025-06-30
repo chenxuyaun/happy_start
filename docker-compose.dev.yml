@@ -1,0 +1,25 @@
+# Development override for docker-compose
+# Usage: docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
+
+services:
+  # Only start essential services for development
+  postgres:
+    ports:
+      - "5432:5432"
+    
+  redis:
+    ports:
+      - "6379:6379"
+
+  # Optional monitoring for development
+  prometheus:
+    profiles:
+      - monitoring
+    ports:
+      - "9090:9090"
+
+  grafana:
+    profiles:
+      - monitoring
+    ports:
+      - "3100:3000"

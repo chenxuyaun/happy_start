@@ -1,0 +1,84 @@
+# 依赖目录
+node_modules/
+bower_components/
+
+# 构建输出
+dist/
+build/
+*.min.js
+*.min.css
+
+# 日志文件
+*.log
+logs/
+
+# 临时文件
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+
+# 操作系统生成的文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 编辑器和IDE配置文件
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 环境变量文件
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# 缓存目录
+.cache/
+.parcel-cache/
+
+# 测试覆盖率报告
+coverage/
+*.lcov
+
+# 包管理器锁文件（可选择性忽略）
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# Python 相关
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# Java 相关
+*.class
+*.jar
+*.war
+*.ear
+target/
+
+# C/C++ 相关
+*.o
+*.exe
+*.dll
+*.so
+*.dylib
+
+# 其他
+*.bak
+*.backup
+*.orig

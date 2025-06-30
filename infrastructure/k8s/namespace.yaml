@@ -1,0 +1,29 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: happy-day
+  labels:
+    name: happy-day
+    environment: production
+  annotations:
+    description: "企业级心理治愈公益项目"
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: happy-day-dev
+  labels:
+    name: happy-day-dev
+    environment: development
+  annotations:
+    description: "开发环境命名空间"
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: happy-day-staging
+  labels:
+    name: happy-day-staging
+    environment: staging
+  annotations:
+    description: "测试环境命名空间"
